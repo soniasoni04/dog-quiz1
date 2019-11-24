@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { connect } from 'react-redux';
 import { getBreedimages } from '../actions/index'
+import { Link } from 'react-router-dom'
 
 class DogBreedImages extends Component {
     state = {
@@ -25,6 +26,9 @@ class DogBreedImages extends Component {
                         return <li key={index}><img src={image} alt='dog-images' width='350px' height='250px' /></li>
                     })}
                 </ul>
+                <p>
+                    <Link to='/'><button className='center'> Go Back </button></Link>
+                </p>
             </div>
         );
     }
