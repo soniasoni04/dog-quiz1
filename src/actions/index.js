@@ -49,6 +49,7 @@ export const getBreedimages = (data) => (dispatch, getState) => {
       console.error(error);
     });
 }
+
 //getRandomImage
 
 export const GET_RANDOM_IMAGE = 'GET_RANDOM_IMAGE'
@@ -66,7 +67,7 @@ export const getRandomImage = () => (dispatch, getState) => {
   fetch(`https://dog.ceo/api/breeds/image/random`)
     .then(response => response.json())
     .then(responseJSON => {
-      console.log("response of random image ", responseJSON)
+      //console.log("response of random image ", responseJSON)
       const action = randomImages(responseJSON.message)
       dispatch(action)
     })
