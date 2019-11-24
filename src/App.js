@@ -1,13 +1,12 @@
 import React from 'react';
 import './App.css';
-import DogList from '../src/components/DogsList'
+import DogList from './components/DogsList'
 
 function App() {
   return (
-    <div className="App">
-      <DogList />
-
-    </div>
+      <div>
+        <DogList />
+      </div>
   );
 }
 
