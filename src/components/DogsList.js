@@ -16,7 +16,7 @@ class DogsList extends Component {
         const { breedList } = this.props
         return (
             <div className="dogs-list">
-                <h1>Dogs List</h1>
+                <h1>Dogs Breeds List</h1>
                 {/* if state dogbreeds is null, display 'Loading' */}
                 {this.props.dogBreeds === null && "Loading..."}
                 <ol>
