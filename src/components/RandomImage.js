@@ -1,12 +1,14 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import { getRandomImage } from '../actions/index'
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { ButtonToolbar, Button } from 'react-bootstrap'
 
 class RandomImages extends Component {
     state = {
         score: 0,
         count: 0,
-       // answer: null
+        // answer: null
     }
 
     componentDidMount() {
@@ -46,27 +48,29 @@ class RandomImages extends Component {
     render() {
         const { randomImage } = this.props
         return (
-            <div>
-                <h2>Random images Quiz...</h2>
+            <div className='center'>
                 <h2>Check the image and give the correct answer :) </h2>
-                <img src={randomImage} alt="dog" width="350px" height="400px" />
+                <br></br>
+                <img src={randomImage} alt="dog" width='350px' height='400px' className='img1' />
 
                 <div>
-                    <p>your current score : {this.state.score} </p>
-                    <p>Your total attempts are  : {this.state.count}</p>
+                    <p >your current score : {this.state.score} </p>
+                    <p >Your total attempts are  : {this.state.count}</p>
                 </div>
-                
-                
+
+
                 <div>
-                    <button onClick={() => this.Score(this.props.breedListArray[0])}>
-                        {this.props.breedListArray[0]}
-                    </button>
-                    <button onClick={() => this.Score(this.props.breedListArray[1])}>
-                        {this.props.breedListArray[1]}
-                    </button>
-                    <button onClick={() => this.Score(this.props.breedListArray[2])}>
-                        {this.props.breedListArray[2]}
-                    </button>
+                    <ButtonToolbar >
+                        <Button className='btn' variant="success" size="lg" onClick={() => this.Score(this.props.breedListArray[0])}>
+                            {this.props.breedListArray[0]}
+                        </Button>
+                        <Button className='btn' variant="success"  size="lg"onClick={() => this.Score(this.props.breedListArray[1])}>
+                            {this.props.breedListArray[1]}
+                        </Button>
+                        <Button className='btn' variant="success" size="lg" onClick={() => this.Score(this.props.breedListArray[2])}>
+                            {this.props.breedListArray[2]}
+                        </Button>
+                    </ButtonToolbar>
                 </div>
 
             </div>
