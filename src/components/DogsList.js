@@ -26,6 +26,7 @@ class DogsList extends Component {
                         return <li key={index}><Link to={`/dogList/${breeds}`}>{breeds}</Link></li>
                     })}
                 </ol>
+            <Link to ={`/RandomImage/quiz`}> Random-Image-Quiz </Link>
             </div>
         );
     }
