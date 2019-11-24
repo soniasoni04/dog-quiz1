@@ -1,8 +1,8 @@
-import { GET_BREEDS_LIST } from '../actions/index'
+import { GET_BREEDS_IMAGES } from '../actions/index'
 export default function (state = [], action = {}) {
     switch (action.type) {
-        case GET_BREEDS_LIST:
-            //console.log("value of breeds-images from reducers: ", action.payload)
+        case GET_BREEDS_IMAGES:
+            console.log("value of breeds from reducers: ", [...action.payload])
             return [...action.payload]
         default:
             return state
