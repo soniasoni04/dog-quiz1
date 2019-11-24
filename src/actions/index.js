@@ -41,7 +41,7 @@ export const getBreedimages = (data) => (dispatch, getState) => {
     fetch(`https://dog.ceo/api/breed/${encodeURIComponent(breed)}/images`)
       .then(response => response.json())
       .then(responseJSON => {
-        console.log("response JSON: ", responseJSON)
+        //console.log("response JSON: ", responseJSON)
         const images = (responseJSON.message.slice(1,11))
         const action = breedImages(images)
         dispatch(action)
