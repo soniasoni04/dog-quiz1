@@ -58,19 +58,16 @@ class RandomImages extends Component {
                     <p >Your total attempts are  : {this.state.count}</p>
                 </div>
 
-
                 <div>
-                    <ButtonToolbar >
-                        <Button className='btn' variant="success" size="lg" onClick={() => this.Score(this.props.breedListArray[0])}>
-                            {this.props.breedListArray[0]}
-                        </Button>
-                        <Button className='btn' variant="success"  size="lg"onClick={() => this.Score(this.props.breedListArray[1])}>
-                            {this.props.breedListArray[1]}
-                        </Button>
-                        <Button className='btn' variant="success" size="lg" onClick={() => this.Score(this.props.breedListArray[2])}>
-                            {this.props.breedListArray[2]}
-                        </Button>
-                    </ButtonToolbar>
+                    <button onClick={() => this.Score(this.props.breedListArray[0])}>
+                        {this.props.breedListArray[0]}
+                    </button><span>   </span>
+                    <button onClick={() => this.Score(this.props.breedListArray[1])}>
+                        {this.props.breedListArray[1]}
+                    </button><span>   </span>
+                    <button onClick={() => this.Score(this.props.breedListArray[2])}>
+                        {this.props.breedListArray[2]}
+                    </button>
                 </div>
 
             </div>

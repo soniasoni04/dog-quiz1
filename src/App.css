@@ -2,25 +2,6 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #09d3ac;
-}
-
 h1{
   color: #075a3a;
   justify-content: center;
@@ -81,9 +62,13 @@ li{
 }
 
 .btn{
-  text-align:center;
   display: inline-block;
-  margin: auto;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
  
 }
 
@@ -94,4 +79,20 @@ li{
   justify-content: center;
   align-items: center;
   text-align: center;
+}
+
+button {
+  display: inline-block;
+  background-color: #18a16d;
+  border: none;
+  color: white;
+  padding: 15px;
+  text-decoration: none;
+  font-size: 16px;
+  margin: 4px 2px;
+  margin: 5%;
+  margin-right:20px;
+  width:200px;
+  height: 60px;
+  
 }
