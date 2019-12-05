@@ -1,4 +1,34 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# DOG-QUIZ
+
+## What this project is about
+
+This is my own attempt at the week 4 React/Redux project the students do during the Academy.Goals for this project: 
+- To practice for myself
+- To become more comfortable with react and redux use in the programming.
+
+## Technologies used : 
+  - react
+  - redux
+  - redux-thunk
+  
+## Requirements: 
+
+- The webapp must show the user a random picture of a dog (the Dog API provides an endpoint for this purpose), and it must ask the user to choose the correct breed name from a list of 3 options.
+- When a user makes the correct choice, his score will increase by 1 and then go for next question.
+- If the user makes the wrong choice, only the Total-count will increase by 1 and then go for next question.
+
+## How to get started
+
+- Draw some wireframes. That is, simple schematic designs that lay out all the parts of the webapp that need to be built.
+- Specify the game logic.
+- List all the actions the user can take. For each interaction, write down what the input information is.
+- Define the shape of your state. Think about all the pieces of information that you have to store in your application state.
+- Setup a React project and implement the wireframes from the previous step. 
+- Fill it with dummy data so you can at least see the GUI and Push it to GitHub
+
+## Create React App
+
+This project was scaffolded using the create-react-app cli.
 
 ## Available Scripts
 
